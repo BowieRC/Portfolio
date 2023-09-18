@@ -50,14 +50,38 @@ section h2{
 
 /* About */
 
+.about-section{
+    display: flex;
+}
+
+#about div{
+    border: 1px solid black;
+}
+
+.skills{
+    width: 100%;
+}
+
+.skills img{
+    position: relative;
+    display: block;
+    right: 0;
+    height: 50px;
+    margin: 10px auto;
+}
+
 /* Projects */
     .container{
         display: flex;
+        flex-wrap: wrap;
+        max-width: 750px;
+        margin: 0 auto;
     }
 
     .project-container
     {
         flex-direction: column;
+        
     }
 
     a{
@@ -74,10 +98,13 @@ section h2{
 
     .big-project{
         aspect-ratio: 2/1;
+        flex: 1 0 500px;
     }
 
     .small-project{
-        aspect-ratio: 1;
+        aspect-ratio: 3/1;
+        flex: 1 0 300px;
+        
     }
     
 /* Contact */
@@ -92,6 +119,7 @@ section h2{
         display: flex;
         flex-direction: row;
         align-items: center;
+        text-align: center;
     }
 
 /* Footer */
