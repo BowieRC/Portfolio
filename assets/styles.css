@@ -2,6 +2,7 @@
     --pink: #fa059d;
     --dark: rgb(10, 10, 10);
     --headerColor: rgb(50, 50, 50);
+    --headerHeight: 75px;
 }
 
 body{
@@ -14,8 +15,8 @@ header{
     top: 0;
     left: 0;
     justify-content: space-between;
-    line-height: 75px;
-    height: 75px;
+    line-height: var(--headerHeight);
+    height: var(--headerHeight);
     width: 100%;
     background-color: var(--headerColor);
 }
@@ -41,6 +42,10 @@ nav a:hover{
     color: var(--pink);
 }
 
+.mobile-menu{
+    display: none;
+}
+
 /* Main */
 section{
     /* border: 1px solid black; */
@@ -62,10 +67,6 @@ section h2{
 
 .about-section{
     display: flex;
-}
-
-#about div{
-    /* border: 1px solid black; */
 }
 
 #about .description{
@@ -142,4 +143,67 @@ footer{
     background-color: var(--headerColor);
     width: 100%;
     height: 75px;
+}
+
+@media screen and (max-width: 980px) {
+    header{
+        /* background-color: blue; */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header{
+        flex-direction: column;
+        height: 100px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    nav{
+        display: flex;
+        flex: 1 0 50px;
+        justify-content: center;
+        height: 50px;
+        line-height: 0;
+        margin-right: 0;
+        font-size: 1rem
+    }
+
+    nav a:hover{
+        color: white;
+    }
+
+    main section{
+        margin: 0;
+    }
+
+    #about h2{
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .about-section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #about img{
+        border: none;
+        border-radius: 0;
+        width: auto;
+        height: auto;
+    }
+    
+
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        line-height: var(--headerHeight);
+        right: 25px;
+        font-size: 2rem;
+    }
+
+    .project{
+        flex: 1 0 200px;
+    }
 }
