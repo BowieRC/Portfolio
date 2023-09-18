@@ -10,6 +10,9 @@ body{
 /* Header */
 header{
     display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     line-height: 75px;
     height: 75px;
@@ -40,7 +43,7 @@ nav a:hover{
 
 /* Main */
 section{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 2rem 1rem;
 }
 
@@ -50,12 +53,23 @@ section h2{
 
 /* About */
 
+#about img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
 .about-section{
     display: flex;
 }
 
 #about div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+#about .description{
+    padding: 25px;
 }
 
 .skills{
@@ -113,6 +127,7 @@ section h2{
         padding: 10px 0;
         display: flex;
         flex-direction: column;
+        flex: 1 1 200px;
     }
 
     address{
