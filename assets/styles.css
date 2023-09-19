@@ -5,7 +5,9 @@
     --headerHeight: 75px;
 }
 
-body{
+*{
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /* Header */
@@ -33,7 +35,6 @@ nav{
 
 nav a{
     padding: 18px 22px;
-    text-decoration: none;
     color: white;
     transition: all 0.2s;
 }
@@ -102,7 +103,6 @@ section h2{
 
     .container a{
         border: 1px solid black;
-        text-decoration: none;
         color: black;
         flex: 1 0 0;
         margin: 5px;
@@ -122,6 +122,20 @@ section h2{
         flex: 1 0 300px;
         
     }
+
+    .project{
+       /* background-color: pink; */
+       background-image: url("images/placeholder.png");
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+
+    #p1{
+        background-image: url("images/seo-optimization-challenge.png");
+        background-position: top;
+        
+    }
     
 /* Contact */
 
@@ -130,6 +144,7 @@ section h2{
         display: flex;
         flex-direction: column;
         flex: 1 1 200px;
+        
     }
 
     address{
@@ -137,6 +152,17 @@ section h2{
         flex-direction: row;
         align-items: center;
         text-align: center;
+        
+    }
+
+    address a{
+        color: black;
+        font-size: 2rem;
+    }
+
+    address a:hover{
+        background-color: grey;
+        color: white
     }
 
 /* Footer */
@@ -150,14 +176,14 @@ footer{
 address{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 address a {
-    border: 1px solid black;
-    width: 30%;
+    flex: 1 0 0;
     text-align: center;
 }
+
+
 
 @media screen and (max-width: 980px) {
     header{
@@ -226,6 +252,10 @@ address a {
         flex: 1 0 300px;
         flex-direction: column;
         height: 100px;
+    }
+
+    .big-project{
+        height: 175px;
     }
 
     /* Mobile Footer */
