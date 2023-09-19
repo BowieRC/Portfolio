@@ -40,6 +40,7 @@ nav a{
 
 nav a:hover{
     color: var(--pink);
+    font-size: 1.5rem;
 }
 
 .mobile-menu{
@@ -99,7 +100,7 @@ section h2{
         
     }
 
-    a{
+    .container a{
         border: 1px solid black;
         text-decoration: none;
         color: black;
@@ -140,9 +141,22 @@ section h2{
 
 /* Footer */
 footer{
+    
     background-color: var(--headerColor);
     width: 100%;
     height: 75px;
+}
+
+address{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+address a {
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
 }
 
 @media screen and (max-width: 980px) {
@@ -151,7 +165,8 @@ footer{
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 712px) {
+    /* Mobile Header */
     header{
         flex-direction: column;
         height: 100px;
@@ -173,9 +188,14 @@ footer{
         color: white;
     }
 
+    
+
+    /* Mobile Content */
     main section{
         margin: 0;
     }
+
+    /* Mobile About */
 
     #about h2{
         padding: 1rem;
@@ -194,16 +214,27 @@ footer{
         height: auto;
     }
     
+    /* Mobile Projects */
 
-    .mobile-menu{
-        display: block;
-        position: absolute;
-        line-height: var(--headerHeight);
-        right: 25px;
-        font-size: 2rem;
+    #p1{
+        display: flex;
+        flex: 1 1 200px;
+        background-color: grey;
+    }
+    .project{
+        background-color: gainsboro;
+        flex: 1 0 300px;
+        flex-direction: column;
+        height: 100px;
     }
 
-    .project{
-        flex: 1 0 200px;
+    /* Mobile Footer */
+    address{
+        flex-direction: column;
+    }
+
+    address a{
+        width: 90%;
+        margin: 10px 0;
     }
 }
