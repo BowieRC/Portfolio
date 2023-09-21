@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Deployment Link:
-[Live Site(https://bowierc.github.io/Portfolio/)
+[Live Site](https://bowierc.github.io/Portfolio/)
 
 ## User Story
 ```
