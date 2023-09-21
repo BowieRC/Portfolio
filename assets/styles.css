@@ -3,6 +3,7 @@
     --dark: rgb(10, 10, 10);
     --headerColor: rgb(50, 50, 50);
     --headerHeight: 75px;
+    --aboutImageSize: 150px;
 }
 
 h2{
@@ -62,8 +63,8 @@ section h2{
 /* About */
 
 #about img{
-    width: 150px;
-    height: 150px;
+    width: var(--aboutImageSize);
+    height: var(--aboutImageSize);
     border: 2px solid black;
     border-radius: 25px;
 }
@@ -115,7 +116,7 @@ section h2{
        background-size: cover;
        background-repeat: no-repeat;
        background-position: center;
-       background-color: purple;
+       background-color: grey;
        
        justify-content: center;
        transition: all 0.2s;
@@ -160,6 +161,7 @@ section h2{
         background-color: grey;
         color: white
     }
+    
 /* Footer */
 footer{
     
